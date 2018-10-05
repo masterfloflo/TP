@@ -38,39 +38,28 @@ public class TestArray1 {
 		*/
 	
 		
-		int resultat = Integer.MAX_VALUE;
+		 int maxVal = Integer.MAX_VALUE;
+	     int minVal = Integer.MIN_VALUE;
 		
-		for (int i=0; i < array.length; i++)
-		{
-			int test = array[i];
-		
-				if (test < resultat)
-				{
-					resultat = test;
-				}
-		}
-		
-		
-		         System.out.print(resultat);
-		         
-		         
-		         
-		 		int resultata = Integer.MIN_VALUE;
-				
-				for (int i=0; i < array.length; i++)
-				{
-					int test = array[i];
-				
-						if (test > resultat)
-						{
-							resultata = test;
-						}
-				}
-				
-				
-				         System.out.print(resultata);
-		         
-		         
+	
+	     for(int i = 0; i < array.length; i++){
+	         if(array[i] < maxVal)
+	           maxVal = array[i];
+	         if(array[i] > minVal)
+	           minVal = array[i];
+	       }
+	  
+	 
+	       for(int i = 0; i < array.length; i++){
+	           if(array[i] < maxVal)
+	             maxVal = array[i];
+	           if(array[i] > minVal)
+	             minVal = array[i];
+	         }
+	    
+	         System.out.print("\nValeur minimale = "+maxVal);
+	         System.out.print("\nValeur maximale = "+minVal);
+
 		         
 
 		}
