@@ -6,7 +6,7 @@ public class TestArray2 {
 	
 		int[] array = { 1, 15, -3, 0, 8, 7, 4, -2, 28, 7, -1, 17, 2, 3, 0, 14, -4};
 	
-	
+	// la moyenne des éléments du tableau
 		 int somme = 0;
 	      for(int i = 0; i < array.length; i++)
 	      {
@@ -14,11 +14,11 @@ public class TestArray2 {
 	      }
 	      float moyenne = (float) somme / array.length;
 	 
-	      System.out.print("\nMoyenne = "+moyenne);
+	      System.out.println("\nLa moyenne des éléments du tableau = "+moyenne);
 	      
 	   
 	      
-	      
+	      // l’index dans le tableau de l’entier 15
 	      int valrech=15;
 	      int position = existe(array, valrech);
 	      if(position!=-1) 
@@ -36,8 +36,7 @@ public class TestArray2 {
 	    	  System.out.println("La valeur recherchée n'existe pas");
 	    	  return -1;
 
-
-	      
+	    
 	   }
 
 	}

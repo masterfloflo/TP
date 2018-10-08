@@ -3,41 +3,49 @@ package main;
 public class TestArray1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		int[] array = { 1, 15, -3, 0, 8, 7, 4, -2 };
 
-		/*
-		 * for (int i = 0; i<17; i++) System.out.print(array[i] + ",");
-		 * 
-		 * System.out.println(" ");
-		 * 
-		 * for (int i = 16; i>=0; i--) System.out.print(array[i] + ",");
-		 * 
-		 * System.out.println(" ");
-		 * 
-		 * for (int i =0; i<17; i++) { if (array[i]>3) System.out.print(array[i] + ",");
-		 * }
-		 * 
-		 * System.out.println(" ");
-		 */
-
-		/*
-		for (int i = 0; i < array.length; i++) 
+// Ensemble des éléments du tableau grâce à une boucle		
+		  for (int i = 0; i<array.length; i++) 
+			  
+			  System.out.print(array[i] + ",");
+		  
+		  System.out.println(" ");
+		  
+// Ensemble des éléments dans l’ordre inverse du tableau
+		 for (int i = 16; i<=array.length; i--) 
+			 System.out.print(array[i] + ",");
+		  
+		  System.out.println(" ");
+		  
+// boucle + un test qui n'affiche que les entiers supérieurs à 3
+		  
+		  for (int i =0; i<array.length; i++)
+		  { 
+			  if (array[i]>3) 
+			System.out.print(array[i] + ",");
+		  }
+		  
+		 System.out.println(" ");
+		
+	// Boucle qui n'affiche que les entiers paires
+		 
+		for (int i = 0; i <array.length; i++) 
 		{
 			
-			int test = array[i];
+			int pair = array[i];
 			
-			if (test % 2 == 0);
-			{
-				System.out.print(test + ",");
-			}
+			if (pair %2 == 0);
+			{pair=array[i];}
+			 
+				System.out.println(pair + ",");
 		}
 		
 		System.out.println(" ");
-
-		*/
 	
 		
+		// Afficher le plus grand et le plus petit élément
 		 int maxVal = Integer.MAX_VALUE;
 	     int minVal = Integer.MIN_VALUE;
 		

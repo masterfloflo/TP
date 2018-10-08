@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class TestFibonacci {
 
+	
+	// Suite de Fibonacci
+	
 	public static int fibo(int n) {
 		if (n == 1 || n == 0)
 			return 1;
